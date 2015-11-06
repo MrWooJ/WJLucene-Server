@@ -2,13 +2,13 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/Jar Files/lucene-analyzers-3.6.2.jar"/>
-	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/Jar Files/json-simple-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/Jar Files/swingx-all-1.6.4.jar"/>
-	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/Jar Files/jxl.jar"/>
-	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/Jar Files/lucene-core-3.6.2.jar"/>
-	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/Jar Files/poi-3.9.jar"/>
-	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/Jar Files/commons-io-2.4.jar"/>
-	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/Jar Files/javafx-ui-swing.jar"/>
+	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/JarFiles/lucene-analyzers-3.6.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/JarFiles/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/JarFiles/swingx-all-1.6.4.jar"/>
+	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/JarFiles/jxl.jar"/>
+	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/JarFiles/lucene-core-3.6.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/JarFiles/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/JarFiles/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/Hurricanc/Documents/Projects/WJLucene-Server/JarFiles/javafx-ui-swing.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
