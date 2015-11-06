@@ -24,7 +24,7 @@ public class Indexer {
 
 		Directory indexDirectory = FSDirectory.open(new File(indexDirectoryPath));
 
-		PersianAnalyzer persianAnalyzer = new PersianAnalyzer(Version.LUCENE_36);
+		PersianAnalyzer persianAnalyzer = new PersianAnalyzer(Version.LUCENE_36,PersianAnalyzer.getDefaultStopSet());
 		IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_36, persianAnalyzer);
 
 		writer = new IndexWriter(indexDirectory, conf);

@@ -31,8 +31,9 @@ public class Searcher {
 		Directory indexDirectory = FSDirectory.open(new File(indexDirectoryPath));
 		IndexReader indexReader = IndexReader.open(indexDirectory);
 		indexSearcher = new IndexSearcher(indexReader);
-		PersianAnalyzer persianAnalyzer = new PersianAnalyzer(Version.LUCENE_36);
+		PersianAnalyzer persianAnalyzer = new PersianAnalyzer(Version.LUCENE_36,PersianAnalyzer.getDefaultStopSet());
 		queryParser = new QueryParser(Version.LUCENE_36,LuceneConstants.DEFAULT_FIELD,persianAnalyzer);
+		queryParser.setAutoGeneratePhraseQueries(true);
 	}
 
 	public TopDocs search(String searchQuery) throws IOException, ParseException {
