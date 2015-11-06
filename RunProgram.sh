@@ -17,14 +17,16 @@ function GenerateLibrariPath {
 	local COMMONIO=$DIR"commons-io-2.4.jar"
 	local JAVAFX=$DIR"javafx-ui-swing.jar"
 	local JSONSIMPLE=$DIR"json-simple-1.1.jar"
-	LIBPATH=.:$JXL:$LUCENEANALYZER:$POI:$SWINGX:$LUCENECORE:$COMMONIO:$JAVAFX:$JSONSIMPLE:$SRCSERVERDIR:$SRCLUCENEDIR:$SRCDIR:$BINDIR
+	LIBPATH=.:$JXL:$LUCENEANALYZER:$POI:$SWINGX:$LUCENECORE:$COMMONIO:$JAVAFX:$JSONSIMPLE:$BINDIR
 }
 GenerateLibrariPath
-echo "LibraryPath: "$LIBPATH
+#echo "LibraryPath: "$LIBPATH
 
-cd $SRCDIR
+cd $SRCLUCENEDIR
 #echo "SRC PWD: "$(pwd)
+echo "[COMPILING START]"
 javac -d $BINDIR -cp $LIBPATH *.java
+echo "[COMPILING END]"
 
 cd $PROJECTDIR
 #echo "BIN PWD: "$(pwd)
