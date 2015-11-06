@@ -2,8 +2,10 @@ package com.lucene;
 
 public class LuceneConstants {
 
-	public static final String DATA_DIRECTORY 			= "/Users/Hurricanc/Documents/Projects/WJLucene-Server/MetaData/Data";
-	public static final String INDEX_DIRECTORY 			= "/Users/Hurricanc/Documents/Projects/WJLucene-Server/MetaData/Index";
+	public static StringBuffer ProjectPath = new StringBuffer();
+	
+	public static String DATA_DIRECTORY					= "/MetaData/Data";
+	public static String INDEX_DIRECTORY				= "/MetaData/Index";
 
 	public static final String DEFAULT_FIELD 			= "core_newsurl";
 	
@@ -30,10 +32,10 @@ public class LuceneConstants {
 	public static final String FILE_NAME				= "filename";
 	public static final String FILE_PATH				= "filepath";
 	
-	public static final String FILE_PATH_CORENEWS 		= "/Users/Hurricanc/Documents/Projects/WJLucene-Server/MetaData/Data/Core.xls";
-	public static final String FILE_PATH_COMMENTS		= "/Users/Hurricanc/Documents/Projects/WJLucene-Server/MetaData/Data/Comments.xls";
-	public static final String FILE_PATH_CATEGORY		= "/Users/Hurricanc/Documents/Projects/WJLucene-Server/MetaData/Data/Category.xls";
-	public static final String FILE_PATH_LABELS			= "/Users/Hurricanc/Documents/Projects/WJLucene-Server/MetaData/Data/Label.xls";
+	public static String FILE_PATH_CORENEWS				= "/MetaData/Data/Core.xls";
+	public static String FILE_PATH_COMMENTS				= "/MetaData/Data/Comments.xls";
+	public static String FILE_PATH_CATEGORY				= "/MetaData/Data/Category.xls";
+	public static String FILE_PATH_LABELS				= "/MetaData/Data/Label.xls";
 	
 	public static final int MAX_SEARCH = 50000;
 	
