@@ -63,6 +63,15 @@ public class TestServer {
 		// Do Indexing Process
 		// If there was a need to remove former indexed filed, Uncomment line below
 		// FileUtils.deleteDirectory(LuceneConstants.INDEX_DIRECTORY);
+		
+		LuceneConstants.ProjectPath = new StringBuffer(args[0]);
+		LuceneConstants.INDEX_DIRECTORY		= LuceneConstants.ProjectPath + LuceneConstants.INDEX_DIRECTORY;
+		LuceneConstants.DATA_DIRECTORY		= LuceneConstants.ProjectPath + LuceneConstants.DATA_DIRECTORY;
+		LuceneConstants.FILE_PATH_CORENEWS	= LuceneConstants.ProjectPath + LuceneConstants.FILE_PATH_CORENEWS;
+		LuceneConstants.FILE_PATH_COMMENTS	= LuceneConstants.ProjectPath + LuceneConstants.FILE_PATH_COMMENTS;
+		LuceneConstants.FILE_PATH_CATEGORY	= LuceneConstants.ProjectPath + LuceneConstants.FILE_PATH_CATEGORY;
+		LuceneConstants.FILE_PATH_LABELS	= LuceneConstants.ProjectPath + LuceneConstants.FILE_PATH_LABELS;
+
 		try {
 			tester.createIndex();
 		} catch (IOException e) {
